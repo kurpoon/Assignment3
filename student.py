@@ -90,7 +90,7 @@ def postprocessing(batch, vocab):
     return batch
 
 stopWords = {}
-dimension =100
+dimension =300
 wordVectors = GloVe(name='6B', dim=dimension)
 
 ################################################################################
@@ -132,7 +132,7 @@ class network(tnn.Module):
         # number of expected features in the input
         self.input_size = dimension
         # number of features in the hidden state h
-        self.hidden_size = 50
+        self.hidden_size = 200
         # number of recurrent layers
         self.layers = 2
         # ReLU activation function
