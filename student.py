@@ -240,4 +240,4 @@ lossFunc = loss()
 trainValSplit = 0.99 #0.8#0.9
 batchSize = 32
 epochs = 11 #10
-optimiser = toptim.SGD(net.parameters(), lr=0.001,, weight_decay=1e-6) #0.01
+optimiser = toptim.SGD(net.parameters(), lr=0.001,weight_decay=1e-6) #0.01
