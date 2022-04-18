@@ -237,7 +237,7 @@ lossFunc = loss()
 # ################# The following determines training options ###################
 # ###############################################################################
 
-trainValSplit = 0.9  #0.99 #0.8
+trainValSplit = 0.99 #0.8#0.9
 batchSize = 32
-epochs = 12 #10
-optimiser = toptim.SGD(net.parameters(), lr=0.01)
+epochs = 11 #10
+optimiser = toptim.SGD(net.parameters(), lr=0.001) #0.01
