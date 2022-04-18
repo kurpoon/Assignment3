@@ -134,7 +134,7 @@ class network(tnn.Module):
         # number of features in the hidden state h
         self.hidden_size = 200
         # number of recurrent layers
-        self.layers = 1
+        self.layers = 2
         # ReLU activation function
         self.relu = tnn.ReLU()
         # sigmoid activation function
